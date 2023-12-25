@@ -8,10 +8,15 @@ export default async function Page({ params: { lng } }: { params: { lng: string 
   return (
     <>
       <h1>{t('title')}</h1>
-      <Link href={`/${lng}/second-page`}>
-        {t('to-second-page')}
-      </Link>
-      <Footer lng={lng}/>
+      <ol>
+        <li>
+          <Link href={`/${lng}/projects/alias`}>
+            {t('project-alias')}
+          </Link>
+        </li>
+      </ol>
+
+      <Footer lng={lng} path={null}/>
     </>
   )
 }

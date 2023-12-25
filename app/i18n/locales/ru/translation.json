@@ -1,4 +1,6 @@
 {
   "title": "Привет!",
-  "to-second-page": "На вторую страницу"
+  "to-second-page": "На вторую страницу",
+  "project": "Проект",
+  "project-alias": "Алиас"
 }
