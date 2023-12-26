@@ -1,3 +1,53 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* BEM styles */
+@layer components {
+  /* Header */
+  .header {
+    @apply bg-gray-800 text-center p-4 pt-12 pb-8
+  }
+
+  .header__container {
+    @apply text-gray-200 max-w-md mx-auto overflow-hidden md:max-w-2xl
+  }
+
+  .header__title {
+    @apply text-3xl font-bold my-2
+  }
+
+  /* Project */
+  .project {
+    @apply max-w-md mx-auto overflow-hidden md:max-w-2xl py-8 px-4
+  }
+
+  .project__subtitle {
+    @apply text-2xl font-semibold my-2
+  }
+
+  .project___paragraph {
+    @apply text-base my-2 text-gray-700 leading-relaxed
+  }
+
+  .project__image {
+    @apply py-4
+  }
+
+  .project__quote {
+    @apply text-base my-4 italic border-l-4 pl-4 border-gray-400 text-gray-600
+  }
+
+  .project__contact {
+    @apply flex space-x-4 pt-4
+  }
+
+  /* Two photos grid on Alias page */
+  .photogrid {
+    @apply py-4 flex items-center space-x-2
+  }
+
+  .photogrid__image {
+    @apply h-36 md:h-64 object-cover
+  }
+}

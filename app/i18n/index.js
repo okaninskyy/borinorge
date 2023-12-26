@@ -19,3 +19,11 @@ export async function useTranslation(lng, ns, options = {}) {
     i18n: i18nextInstance
   }
 }
+
+export async function metadataTranslation(lng, ns, options = {}) {
+  const i18nextInstance = await initI18next(lng, ns)
+  return {
+    t: i18nextInstance.getFixedT(lng, Array.isArray(ns) ? ns[0] : ns, options.keyPrefix),
+    i18n: i18nextInstance
+  }
+}
