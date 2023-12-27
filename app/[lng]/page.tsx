@@ -53,7 +53,9 @@ export default async function Page({ params: { lng } }: { params: { lng: string 
           linkedin={"https://www.linkedin.com/in/olena-varlamova-86a85724a/"}
           isHome
         />
-        <p className="project___paragraph">{t('coming-soon')}</p>
+        <h2 className="project__subtitle">{t('privacy-statement')}</h2>
+        <p className="project___paragraph">{t('privacy-policy')}</p>
+        {/* <p className="project___paragraph">{t('coming-soon')}</p> */}
       </main>
       {/* <ol>
         <li>

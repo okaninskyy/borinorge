@@ -1,6 +1,7 @@
 import { dir } from 'i18next'
 import type { Metadata } from 'next'
 import { metadataTranslation } from '../i18n'
+import { Analytics } from '@vercel/analytics/react';
 import { languages } from '../i18n/settings'
 import '../globals.css'
 
@@ -57,6 +58,7 @@ export default function RootLayout({
       <head />
       <body>
         {children}
+        <Analytics />
       </body>
     </html>
   )
