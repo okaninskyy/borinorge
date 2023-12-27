@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useTranslation } from '../../../i18n'
+import { Contacts } from '../../components/contacts'
 import { Footer } from '../../components/footer'
 
 export default async function Alias({ params: { lng } }: { params: { lng: string } }) {
@@ -47,26 +48,18 @@ export default async function Alias({ params: { lng } }: { params: { lng: string
         </div>
         
         <h2 className="project__subtitle">{t('contact-us')}</h2>
-        <div className="project__contact">
-          <p>{t('olena-varlamova')}:</p>
-          <Link href="https://www.linkedin.com/in/olena-varlamova-86a85724a/" className="text-blue-600 hover:text-blue-800">
-            LinkedIn
-          </Link>
-          <span>,</span>
-          <Link href="https://www.instagram.com/olena_varlamova/" className="text-blue-600 hover:text-blue-800">
-            Instagram
-          </Link>
-        </div>
-        <div className="project__contact">
-          <p>{t('oksana-donets')}:</p>
-          <Link href="https://www.linkedin.com/in/oksana-donets/" className="text-blue-600 hover:text-blue-800">
-            LinkedIn
-          </Link>
-          <span>,</span>
-          <Link href="https://www.instagram.com/oksanadonets.no/" className="text-blue-600 hover:text-blue-800">
-            Instagram
-          </Link>
-        </div>
+        <Contacts
+          lng={lng}
+          nameSlug={'oksana-donets'}
+          instagram={"https://www.instagram.com/oksanadonets.no/"} 
+          linkedin={"https://www.linkedin.com/in/oksana-donets/"}
+        />
+        <Contacts
+          lng={lng}
+          nameSlug={'olena-varlamova'}
+          instagram={"https://www.instagram.com/olena_varlamova/"} 
+          linkedin={"https://www.linkedin.com/in/olena-varlamova-86a85724a/"}
+        />
       </main>
       <Footer lng={lng} path={"/projects/alias"}/>
     </>

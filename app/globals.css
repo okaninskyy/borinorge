@@ -38,8 +38,17 @@
     @apply text-base my-4 italic border-l-4 pl-4 border-gray-400 text-gray-600
   }
 
-  .project__contact {
+  /* Contacts block */
+  .contacts {
     @apply flex space-x-4 pt-4
+  }
+
+  .contacts--home {
+    @apply pt-0 pl-4 pb-4
+  }
+
+  .contacts__link {
+    @apply text-blue-600 hover:text-blue-800
   }
 
   /* Two photos grid on Alias page */

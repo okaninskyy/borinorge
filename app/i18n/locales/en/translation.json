@@ -1,6 +1,10 @@
 {
-  "title": "Hi there!",
-  "to-second-page": "To second page",
-  "project": "Project",
+  "meta-title": "Borinorge — Home",
+  "meta-description": "We live in Norway. This website is about the history of the integration of Ukrainians into Norwegian society, about the people and organizations that help.",
+  "hello": "Hi, everyone 👋",
+  "description": "We are Oksana and Olena. We live in Norway. This website is about the history of the integration of Ukrainians into Norwegian society, about activities that are going on, about the people and organizations that help. The website is an initiative of Ukrainians in Norway.",
+  "quote-oksana": "As an experienced project manager in the media industry, I bring knowledge and experience from the IT sector with a special focus on the application of artificial intelligence. I have practical experience in integrating this cutting-edge technology into various projects. My skills lie in my ability to effectively navigate and lead in unpredictable and dynamic environments. I have a strong track record in developing high-quality products and have in-depth insight into the critical components required to create outstanding solutions.",
+  "quote-olena": "Project manager with expertise in IT, finance, automation, and practical experience with artificial intelligence. Ability to learn quickly and collaborate effectively across disciplines. Ready to contribute my experience to your team.",
+  "coming-soon": "Projects are coming soon...",
   "project-alias": "Alias"
 }
