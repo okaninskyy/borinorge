@@ -16,7 +16,7 @@ export default async function Page({ params: { lng } }: { params: { lng: string 
       </header>
       <main className="project">
         <h2 className="project__subtitle">{t('hello')}</h2>
-        <p className="project___paragraph">{t('description')}</p>
+        <p className="project__paragraph">{t('description')}</p>
         <Image
           className="project__image"
           src={"/images/home/avatar-oksana-donets.jpeg"}
@@ -53,17 +53,22 @@ export default async function Page({ params: { lng } }: { params: { lng: string 
           linkedin={"https://www.linkedin.com/in/olena-varlamova-86a85724a/"}
           isHome
         />
+        <ol className='py-12'>
+          <li>
+            <Link href={`/${lng}/projects/alias`}>
+              {t('project-alias')}
+            </Link>
+          </li>
+          <li>
+            <Link href={`/${lng}/projects/troens-kraft`}>
+              {t('project-troens-kraft')}
+            </Link>
+          </li>
+        </ol>
         <h2 className="project__subtitle">{t('privacy-statement')}</h2>
-        <p className="project___paragraph">{t('privacy-policy')}</p>
-        {/* <p className="project___paragraph">{t('coming-soon')}</p> */}
+        <p className="project__paragraph">{t('privacy-policy')}</p>
       </main>
-      {/* <ol>
-        <li>
-          <Link href={`/${lng}/projects/alias`}>
-            {t('project-alias')}
-          </Link>
-        </li>
-      </ol> */}
+
 
       <Footer lng={lng} path={null}/>
     </>

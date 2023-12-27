@@ -15,7 +15,7 @@ export default async function Alias({ params: { lng } }: { params: { lng: string
         </div>
       </header>
       <main className="project">
-        <p className="project___paragraph">{t('description')}</p>
+        <p className="project__paragraph">{t('description')}</p>
         <Image
           className="project__image"
           src={"/images/alias/alias_oksana.jpeg"}

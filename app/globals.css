@@ -26,7 +26,7 @@
     @apply text-2xl font-semibold my-2
   }
 
-  .project___paragraph {
+  .project__paragraph {
     @apply text-base my-2 text-gray-700 leading-relaxed
   }
 
