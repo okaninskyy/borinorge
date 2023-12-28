@@ -23,11 +23,11 @@
   }
 
   .project__subtitle {
-    @apply text-2xl font-semibold my-2
+    @apply text-2xl font-semibold pt-4 pb-2
   }
 
   .project__paragraph {
-    @apply text-base my-2 text-gray-700 leading-relaxed
+    @apply text-base pt-2 pb-4 text-gray-700 leading-relaxed
   }
 
   .project__image {
@@ -36,6 +36,10 @@
 
   .project__quote {
     @apply text-base my-4 italic border-l-4 pl-4 border-gray-400 text-gray-600
+  }
+
+  .project__link {
+    @apply text-blue-600 hover:text-blue-800
   }
 
   /* Contacts block */
@@ -58,5 +62,30 @@
 
   .photogrid__image {
     @apply h-36 md:h-64 object-cover
+  }
+
+  /* Troens Kraft events table */
+  .events {
+    @apply overflow-x-auto pt-2 pb-4
+  }
+
+  .events__table {
+    @apply min-w-full border-collapse border border-gray-300
+  } 
+
+  .events__thead {
+    @apply bg-gray-100
+  }
+
+  .events__th {
+    @apply px-6 py-3 border-b border-gray-300
+  }
+
+  .events__tr {
+    @apply hover:bg-gray-50
+  }
+
+  .events__td {
+    @apply px-6 py-4 border-b border-gray-300
   }
 }

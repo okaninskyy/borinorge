@@ -1,8 +1,7 @@
 import type { Metadata } from 'next'
 import { metadataTranslation } from '../../../i18n'
 
-
-// or Dynamic metadata
+// Dynamic metadata
 export async function generateMetadata({params: {lng}}:{params: {lng: string}}) {
   const { t } = await metadataTranslation(lng, 'alias')
   const title = t('meta-title')

@@ -21,91 +21,86 @@ export default async function TroensKraft({ params: { lng } }: { params: { lng: 
         <h2 className="project__subtitle">{t('calendar-tro')}</h2>
         <p className="project__paragraph">{t('summary-tro')}</p>
 
-        <div className="overflow-x-auto py-2">
-          <table className="min-w-full text-center border-collapse border border-gray-300">
-            <thead className="bg-gray-100">
+        <div className="events">
+          <table className="events__table">
+            <thead className="events__thead">
               <tr>
-                <th className="px-6 py-3 border-b border-gray-300">📅 <strong>Дата та час</strong></th>
-                <th className="px-6 py-3 border-b border-gray-300">🛠️ <strong>Тема</strong></th>
+                <th className="events__th w-1/3">📅 <strong>Дата та час</strong></th>
+                <th className="events__th w-2/3">🛠️ <strong>Тема</strong></th>
               </tr>
             </thead>
             <tbody>
-              <tr className="hover:bg-gray-50">
-                <td className="px-6 py-4 border-b border-gray-300">05 jan 2024, Fregad 18:00</td>
-                <td className="px-6 py-4 border-b border-gray-300">Впевненість у собі. Що таке &quot;колесо впевненості&quot; та яким чином цей інструмент стане мені в пригоді? (Частина 1)</td>
+              <tr className="events__tr">
+                <td className="events__td align-top">2024-01-05, 18:00</td>
+                <td className="events__td align-top">Впевненість у собі. Що таке &quot;колесо впевненості&quot; та яким чином цей інструмент стане мені в пригоді? (Частина 1)</td>
               </tr>
-              <tr className="hover:bg-gray-50">
-                <td className="px-6 py-4 border-b border-gray-300">12 jan 2024, Fregad 18:00</td>
-                <td className="px-6 py-4 border-b border-gray-300">Шкала впевненості: від мрії до реалізації. Де я саме зараз? Чого бракує для впевненості в собі та де це знайти. (Частина 2)</td>
+              <tr className="events__tr">
+                <td className="events__td">2024-01-12, 18:00</td>
+                <td className="events__td">Шкала впевненості: від мрії до реалізації. Де я саме зараз? Чого бракує для впевненості в собі та де це знайти. (Частина 2)</td>
               </tr>
-              <tr className="hover:bg-gray-50">
-                <td className="px-6 py-4 border-b border-gray-300">19 jan 2024, Fregad 18:00</td>
-                <td className="px-6 py-4 border-b border-gray-300">Мої переконання. Я є те, у що я вірю!</td>
+              <tr className="events__tr">
+                <td className="events__td">2024-01-19, 18:00</td>
+                <td className="events__td">Мої переконання. Я є те, у що я вірю!</td>
               </tr>
-              <tr className="hover:bg-gray-50">
-                <td className="px-6 py-4 border-b border-gray-300">26 jan 2024, Fregad 18:00</td>
-                <td className="px-6 py-4 border-b border-gray-300">Дозвіл собі! Що за ним криється? Різноманітні страхи та їх трансформація.</td>
+              <tr className="events__tr">
+                <td className="events__td">2024-01-26, 18:00</td>
+                <td className="events__td">Дозвіл собі! Що за ним криється? Різноманітні страхи та їх трансформація.</td>
               </tr>
-              <tr className="hover:bg-gray-50">
-                <td className="px-6 py-4 border-b border-gray-300">2 feb 2024, Fregad 18:00</td>
-                <td className="px-6 py-4 border-b border-gray-300">Як працює наш мозок? Формула змін за Бекхардом.</td>
+              <tr className="events__tr">
+                <td className="events__td">2024-02-02, 18:00</td>
+                <td className="events__td">Як працює наш мозок? Формула змін за Бекхардом.</td>
               </tr>
-              <tr className="hover:bg-gray-50">
-                <td className="px-6 py-4 border-b border-gray-300">9 feb 2024, Fregad 18:00</td>
-                <td className="px-6 py-4 border-b border-gray-300">Проактивність як стиль життя. Усвідомленість. Лідерство. Networking. Формула успіху від Т. Леонарда.</td>
+              <tr className="events__tr">
+                <td className="events__td">2024-02-09, 18:00</td>
+                <td className="events__td">Проактивність як стиль життя. Усвідомленість. Лідерство. Networking. Формула успіху від Т. Леонарда.</td>
               </tr>
             </tbody>
           </table>
         </div>
-
-{/* | 📅 **Дата та час**         | 🛠️ **Тема** |
-|----------------------------|-----------------------------------------------------|
-| 09 jan 2024, Tirsdag 18:00 | Культурні практики цифрового середовища |
-| 16 jan 2024, Tirsdag 18:00 | Спеціальності майбутнього у цифровому середовищі |
-| 23 jan 2024, Tirsdag 18:00 | Цифрові гроші  |
-| 30 jan 2024, Tirsdag 18:00 | Цифрова трансформація |
-| 6 feb 2024, Tirsdag 18:00  | Блогінг та персональний бренд |
-| 13 feb 2024, Tirsdag 18:00 | Цифровий суверенітет | */}
 
         <h2 className="project__subtitle">{t('calendar-it')}</h2>
         <p className="project__paragraph">{t('summary-it')}</p>
 
-        <div className="overflow-x-auto py-2">
-          <table className="min-w-full text-center border-collapse border border-gray-300">
-            <thead className="bg-gray-100">
+        <div className="events">
+          <table className="events__table">
+            <thead className="events__thead">
               <tr>
-                <th className="px-6 py-3 border-b border-gray-300">📅 <strong>Дата та час</strong></th>
-                <th className="px-6 py-3 border-b border-gray-300">🛠️ <strong>Тема</strong></th>
+                <th className="events__th w-1/3">📅 <strong>Дата та час</strong></th>
+                <th className="events__th w-2/3">🛠️ <strong>Тема</strong></th>
               </tr>
             </thead>
             <tbody>
-              <tr className="hover:bg-gray-50">
-                <td className="px-6 py-4 border-b border-gray-300">09 jan 2024, Tirsdag 18:00</td>
-                <td className="px-6 py-4 border-b border-gray-300">Культурні практики цифрового середовища</td>
+              <tr className="events__tr">
+                <td className="events__td">2024-01-09, 18:00</td>
+                <td className="events__td">Культурні практики цифрового середовища</td>
               </tr>
-              <tr className="hover:bg-gray-50">
-                <td className="px-6 py-4 border-b border-gray-300">16 jan 2024, Tirsdag 18:00</td>
-                <td className="px-6 py-4 border-b border-gray-300">Спеціальності майбутнього у цифровому середовищі</td>
+              <tr className="events__tr">
+                <td className="events__td">2024-01-16, 18:00</td>
+                <td className="events__td">Спеціальності майбутнього у цифровому середовищі</td>
               </tr>
-              <tr className="hover:bg-gray-50">
-                <td className="px-6 py-4 border-b border-gray-300">23 jan 2024, Tirsdag 18:00</td>
-                <td className="px-6 py-4 border-b border-gray-300">Цифрові гроші</td>
+              <tr className="events__tr">
+                <td className="events__td">2024-01-23, 18:00</td>
+                <td className="events__td">Цифрові гроші</td>
               </tr>
-              <tr className="hover:bg-gray-50">
-                <td className="px-6 py-4 border-b border-gray-300">30 jan 2024, Tirsdag 18:00</td>
-                <td className="px-6 py-4 border-b border-gray-300">Цифрова трансформація</td>
+              <tr className="events__tr">
+                <td className="events__td">2024-01-30, 18:00</td>
+                <td className="events__td">Цифрова трансформація</td>
               </tr>
-              <tr className="hover:bg-gray-50">
-                <td className="px-6 py-4 border-b border-gray-300">6 feb 2024, Tirsdag 18:00</td>
-                <td className="px-6 py-4 border-b border-gray-300">Блогінг та персональний бренд</td>
+              <tr className="events__tr">
+                <td className="events__td">2024-02-06, 18:00</td>
+                <td className="events__td">Блогінг та персональний бренд</td>
               </tr>
-              <tr className="hover:bg-gray-50">
-                <td className="px-6 py-4 border-b border-gray-300">13 feb 2024, Tirsdag 18:00</td>
-                <td className="px-6 py-4 border-b border-gray-300">Цифровий суверенітет</td>
+              <tr className="events__tr">
+                <td className="events__td">2024-02-13, 18:00</td>
+                <td className="events__td">Цифровий суверенітет</td>
               </tr>
             </tbody>
           </table>
         </div>
+
+        <h2 className="project__subtitle">Реєстрація</h2>
+        <p className="project__paragraph">Пройдіть реєстрацію в Гугл Формах до 3 січня 2024 року включно за посиланням:</p>
+        <p><a className="project__link" href="https://forms.gle/7mWFqgqF54qE33B46">https://forms.gle/7mWFqgqF54qE33B46</a></p>
       </main>
       <Footer lng={lng} path={"/projects/troens-kraft"}/>
     </>
