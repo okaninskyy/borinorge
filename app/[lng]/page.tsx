@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { useTranslation } from '../i18n'
 import { Contacts } from './components/contacts'
 import { Footer } from './components/footer'
+import { ProjectCard, type Project } from './components/project-card'
 
 export default async function Page({ params: { lng } }: { params: { lng: string } }) {
   const { t } = await useTranslation(lng)
@@ -53,18 +54,27 @@ export default async function Page({ params: { lng } }: { params: { lng: string 
           linkedin={"https://www.linkedin.com/in/olena-varlamova-86a85724a/"}
           isHome
         />
-        <ol className='py-12'>
-          <li>
-            <Link href={`/${lng}/projects/alias`}>
-              {t('project-alias')}
-            </Link>
-          </li>
-          <li>
-            <Link href={`/${lng}/projects/troens-kraft`}>
-              {t('project-troens-kraft')}
-            </Link>
-          </li>
-        </ol>
+        <h2 className="project__subtitle">{t('projects')}</h2>
+        <div className="projects__grid">
+          {[
+            {
+              id: 'alias',
+              title: t('project-alias'),
+              imageUrl: '/images/preview/alias_1200_630.jpeg',
+            },
+            {
+              id: 'troens-kraft',
+              title: t('project-troens-kraft'),
+              imageUrl: '/images/preview/troens_kraft_1200_630.jpeg',
+            },
+          ].map((p: Project) => (
+            <>
+              <Link key={p.id} href={`/${lng}/projects/${p.id}`}>
+                <ProjectCard project={p} />
+              </Link>
+            </>
+          ))}
+        </div>
         <h2 className="project__subtitle">{t('privacy-statement')}</h2>
         <p className="project__paragraph">{t('privacy-policy')}</p>
       </main>
