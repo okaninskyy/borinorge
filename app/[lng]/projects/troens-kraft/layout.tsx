@@ -3,7 +3,7 @@ import { metadataTranslation } from '../../../i18n'
 
 // Dynamic metadata
 export async function generateMetadata({params: {lng}}:{params: {lng: string}}) {
-  const { t } = await metadataTranslation(lng, 'alias')
+  const { t } = await metadataTranslation(lng, 'troens-kraft')
   const title = t('meta-title')
   const description = t('meta-description')
   const metadataBase = new URL('https://www.borinorge.no')
