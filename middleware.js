@@ -6,7 +6,7 @@ acceptLanguage.languages(languages)
 
 export const config = {
   // matcher: '/:lng*'
-  matcher: ['/((?!api|_next/static|_next/image|assets|favicon.ico|sw.js).*)']
+  matcher: ['/((?!api|_next/static|_next/image|assets|favicon.ico|sw.js|fonts).*)']
 }
 
 export function middleware(req) {
@@ -19,7 +19,8 @@ export function middleware(req) {
   if (
     !languages.some(loc => req.nextUrl.pathname.startsWith(`/${loc}`)) &&
     !req.nextUrl.pathname.startsWith('/_next') &&
-    !req.nextUrl.pathname.startsWith('/images')
+    !req.nextUrl.pathname.startsWith('/images') &&
+    !req.nextUrl.pathname.startsWith('/public/fonts')
   ) {
     return NextResponse.redirect(new URL(`/${lng}${req. nextUrl.pathname}`, req.url))
   }

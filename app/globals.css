@@ -1,3 +1,4 @@
+@import 'fonts.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,15 +7,23 @@
 @layer components {
   /* Header */
   .header {
-    @apply bg-gray-800 text-center p-4 pt-12 pb-8
+    @apply bg-gray-800 text-gray-200 text-center p-4 pt-12 pb-8
+  }
+
+  .header--home {
+    @apply bg-transparent text-gray-800 pb-0
   }
 
   .header__container {
-    @apply text-gray-200 max-w-md mx-auto overflow-hidden md:max-w-2xl
+    @apply max-w-md mx-auto overflow-hidden md:max-w-2xl
   }
 
   .header__title {
     @apply text-3xl font-bold my-2
+  }
+
+  .header__title--home {
+    @apply font-greatvibes text-6xl font-normal
   }
 
   /* Project */

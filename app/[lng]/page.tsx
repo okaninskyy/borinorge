@@ -10,9 +10,9 @@ export default async function Page({ params: { lng } }: { params: { lng: string 
 
   return (
     <>
-      <header className="header">
+      <header className="header header--home">
         <div className="header__container">
-          <h1 className="header__title">Borinorge</h1>
+          <h1 className="header__title header__title--home">Bor i Norge</h1>
         </div>
       </header>
       <main className="project">
