@@ -67,6 +67,11 @@ export default async function Page({ params: { lng } }: { params: { lng: string 
               title: t('project-troens-kraft'),
               imageUrl: '/images/preview/troens_kraft_1200_630.jpeg',
             },
+            {
+              id: 'ordbokene',
+              title: t('project-ordbokene'),
+              imageUrl: '/images/preview/ordbokene_1200_630.jpeg',
+            },
           ].map((p: Project) => (
             <>
               <Link key={p.id} href={`/${lng}/projects/${p.id}`}>
