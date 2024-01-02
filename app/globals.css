@@ -51,6 +51,14 @@
     @apply text-blue-600 hover:text-blue-800
   }
 
+  .project__list {
+    @apply list-disc list-inside pb-4
+  }
+
+  .project__list-item {
+    @apply text-base text-gray-700 leading-relaxed
+  }
+
   /* Contacts block */
   .contacts {
     @apply flex space-x-4 pt-4
@@ -102,5 +110,4 @@
   .projects__grid {
     @apply grid grid-cols-1 md:grid-cols-2 
   }
-
 }
