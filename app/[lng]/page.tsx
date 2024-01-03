@@ -72,18 +72,20 @@ export default async function Page({ params: { lng } }: { params: { lng: string 
               title: t('project-ordbokene'),
               imageUrl: '/images/preview/ordbokene_1200_630.jpeg',
             },
+            {
+              id: 'it-kunnskap',
+              title: t('project-it-kunnskap'),
+              imageUrl: '/images/preview/it_kunnskap_1200_630.jpeg',
+            },
           ].map((p: Project) => (
-            <>
-              <Link key={p.id} href={`/${lng}/projects/${p.id}`}>
-                <ProjectCard project={p} />
-              </Link>
-            </>
+            <Link key={p.id} href={`/${lng}/projects/${p.id}`}>
+              <ProjectCard project={p} />
+            </Link>
           ))}
         </div>
         <h2 className="project__subtitle">{t('privacy-statement')}</h2>
         <p className="project__paragraph">{t('privacy-policy')}</p>
       </main>
-
 
       <Footer lng={lng} path={null}/>
     </>

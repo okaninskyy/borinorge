@@ -95,11 +95,6 @@ export default async function TroensKraft({ params: { lng } }: { params: { lng: 
             </tbody>
           </table>
         </div>
-
-        <h2 className="project__subtitle">Реєстрація</h2>
-        <p className="project__paragraph">Пройдіть реєстрацію в Гугл Формах до 3 січня 2024 року включно за посиланням:</p>
-        <p>
-          <Link className="project__link" href="https://forms.gle/7mWFqgqF54qE33B46">https://forms.gle/7mWFqgqF54qE33B46</Link></p>
       </main>
       <Footer lng={lng} path={"/projects/troens-kraft"}/>
     </>
