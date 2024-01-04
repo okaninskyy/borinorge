@@ -45,8 +45,8 @@ export default async function Ordbokene({ params: { lng } }: { params: { lng: st
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen>  
         </iframe>
-        <div className="py-8 flex justify-center">
-          <Link href="https://ordbøkene.no" className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300">
+        <div className="target-action">
+          <Link href="https://ordbøkene.no" className="target-action__link">
             Ordbøkene.no
           </Link>
         </div>

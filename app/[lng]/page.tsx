@@ -77,6 +77,16 @@ export default async function Page({ params: { lng } }: { params: { lng: string 
               title: t('project-it-kunnskap'),
               imageUrl: '/images/preview/it_kunnskap_1200_630.jpeg',
             },
+            {
+              id: 'redaksjon',
+              title: t('project-redaksjon'),
+              imageUrl: '/images/preview/redaksjon_1200_630.jpeg',
+            },
+            {
+              id: 'direkte-stotte',
+              title: t('project-direkte-stotte'),
+              imageUrl: '/images/preview/direkte_stotte_1200_630.jpeg',
+            }
           ].map((p: Project) => (
             <Link key={p.id} href={`/${lng}/projects/${p.id}`}>
               <ProjectCard project={p} />
