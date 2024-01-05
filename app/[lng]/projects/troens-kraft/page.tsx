@@ -1,5 +1,5 @@
-import Link from 'next/link'
 import { useTranslation } from '../../../i18n'
+import { Breadcrumbs } from '../../components/breadcrumbs'
 import { Footer } from '../../components/footer'
 
 export default async function TroensKraft({ params: { lng } }: { params: { lng: string } }) {
@@ -9,10 +9,11 @@ export default async function TroensKraft({ params: { lng } }: { params: { lng: 
     <>
       <header className="header">
         <div className="header__container">
-          <h1 className="header__title">{t('title')}</h1>
+          <h1 className="header__title header__title--home">{t('title')}</h1>
         </div>
       </header>
       <main className="project">
+        <Breadcrumbs currentPage={t('title')} />
         <p className="project__paragraph">{t('description-tro')}</p>
         <p className="project__paragraph">{t('description-it')}</p>
 
@@ -30,27 +31,27 @@ export default async function TroensKraft({ params: { lng } }: { params: { lng: 
             <tbody>
               <tr className="events__tr">
                 <td className="events__td align-top">2024-01-05, 18:00</td>
-                <td className="events__td align-top">Впевненість у собі. Що таке &quot;колесо впевненості&quot; та яким чином цей інструмент стане мені в пригоді? (Частина 1)</td>
+                <td className="events__td align-top">{t('tro-tema-1')}</td>
               </tr>
               <tr className="events__tr">
                 <td className="events__td">2024-01-12, 18:00</td>
-                <td className="events__td">Шкала впевненості: від мрії до реалізації. Де я саме зараз? Чого бракує для впевненості в собі та де це знайти. (Частина 2)</td>
+                <td className="events__td">{t('tro-tema-2')}</td>
               </tr>
               <tr className="events__tr">
                 <td className="events__td">2024-01-19, 18:00</td>
-                <td className="events__td">Мої переконання. Я є те, у що я вірю!</td>
+                <td className="events__td">{t('tro-tema-3')}</td>
               </tr>
               <tr className="events__tr">
                 <td className="events__td">2024-01-26, 18:00</td>
-                <td className="events__td">Дозвіл собі! Що за ним криється? Різноманітні страхи та їх трансформація.</td>
+                <td className="events__td">{t('tro-tema-4')}</td>
               </tr>
               <tr className="events__tr">
                 <td className="events__td">2024-02-02, 18:00</td>
-                <td className="events__td">Як працює наш мозок? Формула змін за Бекхардом.</td>
+                <td className="events__td">{t('tro-tema-5')}</td>
               </tr>
               <tr className="events__tr">
                 <td className="events__td">2024-02-09, 18:00</td>
-                <td className="events__td">Проактивність як стиль життя. Усвідомленість. Лідерство. Networking. Формула успіху від Т. Леонарда.</td>
+                <td className="events__td">{t('tro-tema-6')}</td>
               </tr>
             </tbody>
           </table>
@@ -70,27 +71,27 @@ export default async function TroensKraft({ params: { lng } }: { params: { lng: 
             <tbody>
               <tr className="events__tr">
                 <td className="events__td">2024-01-09, 18:00</td>
-                <td className="events__td">Культурні практики цифрового середовища</td>
+                <td className="events__td">{t('it-tema-1')}</td>
               </tr>
               <tr className="events__tr">
                 <td className="events__td">2024-01-16, 18:00</td>
-                <td className="events__td">Спеціальності майбутнього у цифровому середовищі</td>
+                <td className="events__td">{t('it-tema-2')}</td>
               </tr>
               <tr className="events__tr">
                 <td className="events__td">2024-01-23, 18:00</td>
-                <td className="events__td">Цифрові гроші</td>
+                <td className="events__td">{t('it-tema-3')}</td>
               </tr>
               <tr className="events__tr">
                 <td className="events__td">2024-01-30, 18:00</td>
-                <td className="events__td">Цифрова трансформація</td>
+                <td className="events__td">{t('it-tema-4')}</td>
               </tr>
               <tr className="events__tr">
                 <td className="events__td">2024-02-06, 18:00</td>
-                <td className="events__td">Блогінг та персональний бренд</td>
+                <td className="events__td">{t('it-tema-5')}</td>
               </tr>
               <tr className="events__tr">
                 <td className="events__td">2024-02-13, 18:00</td>
-                <td className="events__td">Цифровий суверенітет</td>
+                <td className="events__td">{t('it-tema-6')}</td>
               </tr>
             </tbody>
           </table>

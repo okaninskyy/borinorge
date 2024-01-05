@@ -1,7 +1,6 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import { useTranslation } from '../../../i18n'
-import { Contacts } from '../../components/contacts'
+import { Breadcrumbs } from '../../components/breadcrumbs'
 import { Footer } from '../../components/footer'
 
 export default async function DirekteStotte({ params: { lng } }: { params: { lng: string } }) {
@@ -11,10 +10,11 @@ export default async function DirekteStotte({ params: { lng } }: { params: { lng
     <>
       <header className="header">
         <div className="header__container">
-          <h1 className="header__title">{t('title')}</h1>
+          <h1 className="header__title header__title--home">{t('title')}</h1>
         </div>
       </header>
       <main className="project">
+        <Breadcrumbs currentPage={t('title')} />
         <p className="project__paragraph">{t('fra-vadym')}</p>
         <Image
           className="project__image"
