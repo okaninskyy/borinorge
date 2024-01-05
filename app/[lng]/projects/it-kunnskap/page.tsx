@@ -15,7 +15,7 @@ export default async function ItKunnskap({ params: { lng } }: { params: { lng: s
         </div>
       </header>
       <main className="project">
-        <Breadcrumbs currentPage={t('title')} />
+        <Breadcrumbs currentPage={t('title')} lng={lng} />
         <p className="project__paragraph p-0">{t('fra-oksana')}</p>
         <Image
           className="project__image p-0 pt-4"

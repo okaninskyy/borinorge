@@ -13,7 +13,7 @@ export default async function TroensKraft({ params: { lng } }: { params: { lng: 
         </div>
       </header>
       <main className="project">
-        <Breadcrumbs currentPage={t('title')} />
+        <Breadcrumbs currentPage={t('title')} lng={lng} />
         <p className="project__paragraph">{t('description-tro')}</p>
         <p className="project__paragraph">{t('description-it')}</p>
 

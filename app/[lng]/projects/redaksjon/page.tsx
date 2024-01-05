@@ -15,7 +15,7 @@ export default async function Redaksjon({ params: { lng } }: { params: { lng: st
         </div>
       </header>
       <main className="project">
-        <Breadcrumbs currentPage={t('title')} />
+        <Breadcrumbs currentPage={t('title')} lng={lng} />
         <p className="project__paragraph">{t('description')}</p>
         <p className="project__paragraph">{t('fra-teacher')}</p>
         <p className="project__quote">{t('quote-teacher')}</p>

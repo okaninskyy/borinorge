@@ -14,7 +14,7 @@ export default async function DirekteStotte({ params: { lng } }: { params: { lng
         </div>
       </header>
       <main className="project">
-        <Breadcrumbs currentPage={t('title')} />
+        <Breadcrumbs currentPage={t('title')} lng={lng} />
         <p className="project__paragraph">{t('fra-vadym')}</p>
         <Image
           className="project__image"

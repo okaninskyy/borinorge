@@ -15,7 +15,7 @@ export default async function Ordbokene({ params: { lng } }: { params: { lng: st
         </div>
       </header>
       <main className="project">
-        <Breadcrumbs currentPage={t('title')} />
+        <Breadcrumbs currentPage={t('title')} lng={lng} />
         <p className="project__paragraph">{t('description')}</p>
         <p className="project__paragraph p-0">{t('fra-olena')}</p>
         <Image

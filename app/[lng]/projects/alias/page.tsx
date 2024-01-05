@@ -15,7 +15,7 @@ export default async function Alias({ params: { lng } }: { params: { lng: string
         </div>
       </header>
       <main className="project">
-        <Breadcrumbs currentPage={t('title')} />
+        <Breadcrumbs currentPage={t('title')} lng={lng} />
         <p className="project__paragraph">{t('description')}</p>
         <Image
           className="project__image"
