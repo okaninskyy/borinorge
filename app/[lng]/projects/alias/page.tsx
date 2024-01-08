@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { greatVibes } from '../../../fonts'
 import { useTranslation } from '../../../i18n'
 import { Breadcrumbs } from '../../components/breadcrumbs'
 import { Contacts } from '../../components/contacts'
@@ -11,7 +12,7 @@ export default async function Alias({ params: { lng } }: { params: { lng: string
     <>
       <header className="header">
         <div className="header__container">
-          <h1 className="header__title header__title--home">{t('title')}</h1>
+          <h1 className={`header__title header__title--home ${greatVibes.variable}`}>{t('title')}</h1>
         </div>
       </header>
       <main className="project">

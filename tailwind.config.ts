@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        greatvibes: ['GreatVibes', 'cursive'],
+        vibes: ['var(--font-vibes)'],
       },
     },
   },

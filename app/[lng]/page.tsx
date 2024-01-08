@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { greatVibes } from '../fonts'
 import { useTranslation } from '../i18n'
 import { Contacts } from './components/contacts'
 import { Footer } from './components/footer'
@@ -12,7 +13,9 @@ export default async function Page({ params: { lng } }: { params: { lng: string 
     <>
       <header className="header header--home">
         <div className="header__container">
-          <h1 className="header__title header__title--home">Bor i Norge</h1>
+          <h1 className={`header__title header__title--home ${greatVibes.variable}`}>
+            Bor i Norge
+          </h1>
         </div>
       </header>
       <main className="project">
@@ -58,14 +61,14 @@ export default async function Page({ params: { lng } }: { params: { lng: string 
         <div className="projects__grid">
           {[
             {
-              id: 'alias',
-              title: t('project-alias'),
-              imageUrl: '/images/preview/alias_1200_630.jpeg',
-            },
-            {
               id: 'troens-kraft',
               title: t('project-troens-kraft'),
               imageUrl: '/images/preview/troens_kraft_1200_630.jpeg',
+            },
+            {
+              id: 'alias',
+              title: t('project-alias'),
+              imageUrl: '/images/preview/alias_1200_630.jpeg',
             },
             {
               id: 'ordbokene',

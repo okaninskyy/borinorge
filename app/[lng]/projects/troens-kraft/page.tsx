@@ -1,3 +1,4 @@
+import { greatVibes } from '../../../fonts'
 import { useTranslation } from '../../../i18n'
 import { Breadcrumbs } from '../../components/breadcrumbs'
 import { Footer } from '../../components/footer'
@@ -9,7 +10,7 @@ export default async function TroensKraft({ params: { lng } }: { params: { lng: 
     <>
       <header className="header">
         <div className="header__container">
-          <h1 className="header__title header__title--home">{t('title')}</h1>
+          <h1 className={`header__title header__title--home ${greatVibes.variable}`}>{t('title')}</h1>
         </div>
       </header>
       <main className="project">

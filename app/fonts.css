@@ -1,8 +1,0 @@
-@font-face {
-  font-family: 'GreatVibes';
-  src: url('/fonts/greatvibes/greatvibes-regular.ttf') format('truetype');
-  src: url('/fonts/greatvibes/greatvibes-regular.woff2') format('woff2'),
-       url('/fonts/greatvibes/greatvibes-regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}

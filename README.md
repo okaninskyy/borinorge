@@ -1,4 +1,16 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# borinorge
+
+> This website is about the history of the integration of Ukrainians into Norwegian society, about activities that are going on, about the people and organizations that help.
+
+## Features
+
+- i18n internationalization (no, uk, en, ru) for the new version of Next.js 13/14 app directory. Check out this [blog post](https://locize.com/blog/next-app-dir-i18n/);
+- [Metadata API](https://nextjs.org/docs/app/building-your-application/optimizing/metadata) for the new version of Next.js 13/14 app directory, opengraph and favicon support;
+- custom fonts support [with Tailwind CSS](https://nextjs.org/docs/app/building-your-application/optimizing/fonts#with-tailwind-css);
+- use ChatGPT 4 for image generation and text translation.
+
+The website is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
 
 ## Getting Started
 
