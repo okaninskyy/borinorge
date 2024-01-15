@@ -75,7 +75,7 @@ export default async function TroensKraft({ params: { lng } }: { params: { lng: 
                 <td className="events__td">{t('it-tema-1')}</td>
               </tr>
               <tr className="events__tr">
-                <td className="events__td">2024-01-16, 18:00</td>
+                <td className="events__td">2024-01-16, 21:00</td>
                 <td className="events__td">{t('it-tema-2')}</td>
               </tr>
               <tr className="events__tr">
