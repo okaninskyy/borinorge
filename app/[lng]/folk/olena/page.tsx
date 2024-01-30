@@ -19,7 +19,7 @@ export default async function Olena({ params: { lng } }: { params: { lng: string
         <Breadcrumbs currentPage={t('olena-varlamova')} lng={lng} />
         <Image
           className="project__image"
-          src={"/images/home/avatar-olena-varlamova.jpeg"}
+          src={"/images/folk/avatar-olena-varlamova.jpeg"}
           alt="Olena Varlamova"
           width={640}
           height={640}

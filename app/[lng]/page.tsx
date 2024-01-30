@@ -60,6 +60,30 @@ export default async function Page({ params: { lng } }: { params: { lng: string 
             </Link>
           ))}
         </div>
+        <h2 className="project__subtitle">{t('people')}</h2>
+        <div className="projects__grid">
+          {[
+            {
+              id: 'olena',
+              title: t('olena-varlamova'),
+              imageUrl: '/images/preview/folk/olena_varlamova_1200_630.jpeg',
+            },
+            {
+              id: 'oksana',
+              title: t('oksana-donets'),
+              imageUrl: '/images/preview/folk/oksana_donets_1200_630.jpeg',
+            },
+            {
+              id: 'vadym',
+              title: t('vadym-kaninskyi'),
+              imageUrl: '/images/preview/folk/vadym_kaninskyi_1200_630.jpeg',
+            }
+          ].map((p: Project) => (
+            <Link key={p.id} href={`/${lng}/folk/${p.id}`}>
+              <ProjectCard project={p} />
+            </Link>
+          ))}
+        </div>
         <h2 className="project__subtitle">{t('privacy-statement')}</h2>
         <p className="project__paragraph">{t('privacy-policy')}</p>
       </main>

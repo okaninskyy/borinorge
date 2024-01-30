@@ -3,9 +3,9 @@ import { metadataTranslation } from '../../../i18n'
 
 // Dynamic metadata
 export async function generateMetadata({params: {lng}}:{params: {lng: string}}) {
-  const { t } = await metadataTranslation(lng, 'olena')
-  const title = t('olena-varlamova')
-  const description = t('quote-olena')
+  const { t } = await metadataTranslation(lng, 'vadym')
+  const title = t('vadym-kaninskyi')
+  const description = t('quote-vadym')
   const metadataBase = new URL('https://www.borinorge.no')
   
   const metadata: Metadata = {
@@ -19,14 +19,14 @@ export async function generateMetadata({params: {lng}}:{params: {lng: string}}) 
       description: description,
       siteName: title,
       images: [{
-        url: "/images/preview/folk/olena_varlamova_1200_630.jpeg",
+        url: "/images/preview/folk/vadym_kaninskyi_1200_630.jpeg",
       }],
     },
     twitter: {
       card: "summary_large_image",
       site: "@site",
       creator: "@creator", 
-      images: "/images/preview/folk/olena_varlamova_1200_630.jpeg" 
+      images: "/images/preview/folk/vadym_kaninskyi_1200_630.jpeg" 
     },
   }
 

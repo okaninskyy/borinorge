@@ -5,7 +5,7 @@ import { metadataTranslation } from '../../../i18n'
 export async function generateMetadata({params: {lng}}:{params: {lng: string}}) {
   const { t } = await metadataTranslation(lng, 'oksana')
   const title = t('oksana-donets')
-  const description = t('meta-description')
+  const description = t('quote-oksana')
   const metadataBase = new URL('https://www.borinorge.no')
   
   const metadata: Metadata = {
@@ -19,14 +19,14 @@ export async function generateMetadata({params: {lng}}:{params: {lng: string}}) 
       description: description,
       siteName: title,
       images: [{
-        url: "/images/preview/alias_1200_630.jpeg",
+        url: "/images/preview/folk/oksana_donets_1200_630.jpeg",
       }],
     },
     twitter: {
       card: "summary_large_image",
       site: "@site",
       creator: "@creator", 
-      images: "/images/preview/alias_1200_630.jpeg" 
+      images: "/images/preview/folk/oksana_donets_1200_630.jpeg" 
     },
   }
 
