@@ -1,8 +1,6 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import { greatVibes } from '../fonts'
 import { useTranslation } from '../i18n'
-import { Contacts } from './components/contacts'
 import { Footer } from './components/footer'
 import { ProjectCard, type Project } from './components/project-card'
 
@@ -14,13 +12,14 @@ export default async function Page({ params: { lng } }: { params: { lng: string 
       <header className="header header--home">
         <div className="header__container">
           <h1 className={`header__title header__title--home ${greatVibes.variable}`}>
-            Bor i Norge
+            Vi bor i Norge
           </h1>
         </div>
       </header>
       <main className="project">
         <h2 className="project__subtitle">{t('hello')}</h2>
-        <p className="project__paragraph">{t('description')}</p>
+        <p className="project__paragraph">{t('description-part-1')}</p>
+        <p className="project__paragraph">{t('description-part-2')}</p>
         <h2 className="project__subtitle">{t('projects')}</h2>
         <div className="projects__grid">
           {[
@@ -60,7 +59,9 @@ export default async function Page({ params: { lng } }: { params: { lng: string 
             </Link>
           ))}
         </div>
-        <h2 className="project__subtitle">{t('people')}</h2>
+        <h2 className="project__subtitle">{t('about-us')}</h2>
+        <p className="project__paragraph">{t('about-us-description-part-1')}</p>
+        <p className="project__paragraph">{t('about-us-description-part-2')}</p>
         <div className="projects__grid">
           {[
             {

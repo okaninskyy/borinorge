@@ -1,8 +1,9 @@
 {
   "meta-title": "Borinorge — Hjem",
-  "meta-description": "Vi bor i Norge. Denne nettsiden handler om historien om integreringen av ukrainere i det norske samfunnet, om menneskene og organisasjonene som hjelper til.",
+  "meta-description": "Vi bor i Norge er en nettside for deg som nylig har flyttet til Norge og ønsker å delta aktivt i det norske samfunnet. Målet er å bygge bro mellom kulturer gjennom ideer til møteplasser og frivillig arbeid, og å bistå deg som nylig har flytte til Norge med svar på spørsmål relatert til integrering.",
   "hello": "Hei, alle sammen 👋",
-  "description": "Borinorge er et digitalt urban common prosjekt i Norge. Nettstedet brukes på en ideell og samfunnsnyttig måte. Det bygger broer mellom kulturer gjennom frivillig arbeid og hjelper nykommere med spørsmål relatert til integrering.",
+  "description-part-1": "Vi bor i Norge er en nettside for deg som nylig har flyttet til Norge og ønsker å delta aktivt i det norske samfunnet. Målet er å bygge bro mellom kulturer gjennom ideer til møteplasser og frivillig arbeid, og å bistå deg som nylig har flytte til Norge med svar på spørsmål relatert til integrering.",
+  "description-part-2": "Som innflytter til Norge har de fleste et ønske om å bidra i samfunnet, men hvordan komme i gang? En fin start kan være å delta i et frivillig prosjekt. Det gir mulighet til å møte nye mennesker, og er samtidig både spennende og meningsfullt. Slike prosjekter kan også være en inngangsbillett til det ordinære arbeidslivet gjennom å vise frem egne ferdigheter og bygge en CV.",
   "privacy-statement": "Personvernerklæring",
   "privacy-policy": "Borinorge samler inn anonymisert informasjon om besøkende på nettstedet ved hjelp av Vercel Web Analytics. Denne teknologien bruker ikke informasjonskapsler og lagrer kun anonymisert informasjon i ikke mer enn 30 dager. Statistikken samles inn for å forbedre og videreutvikle nettstedet. Eksempler på hva statistikken gir svar på inkluderer antall personer som besøker forskjellige sider, hvilke nettlesere som brukes, og fra hvilke land besøkene gjøres. Vercel Web Analytics overholder GDPR-loven.",
   "coming-soon": "Prosjekter kommer snart...",
@@ -13,7 +14,9 @@
   "project-it-kunnskap": "IT-kunnskapsmaraton",
   "project-redaksjon": "Redaksjon",
   "project-direkte-stotte": "Direkte støtte",
-  "people": "Folk",
+  "about-us": "Om oss",
+  "about-us-description-part-1": "Vi bor i Norge er et Urban common prosjekt som drives gjennom frivillig arbeid på ideell basis. Initiativtager er Vadym Kaninskyj som startet nettsiden i 2022. Nedenfor finner du mer informasjon om hvem vi er.",
+  "about-us-description-part-2": "Har du innspill til nettsiden? Ta gjerne kontakt med en av oss:",
   "oksana-donets": "Oksana Donets",
   "olena-varlamova": "Olena Varlamova",
   "vadym-kaninskyi": "Vadym Kaninskyj"
