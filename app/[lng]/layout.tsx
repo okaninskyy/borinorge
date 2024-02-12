@@ -53,7 +53,7 @@ export default function RootLayout({
   }
 }) {
   return (
-    <html lang={lng} dir={dir(lng)}>
+    <html lang={lng} dir={dir(lng)} className="scroll-smooth">
       <head />
       <body>
         {children}

@@ -1,8 +1,25 @@
 import Link from 'next/link'
 import { greatVibes } from '../fonts'
 import { useTranslation } from '../i18n'
+import { languages } from '../i18n/settings'
 import { Footer } from './components/footer'
+import Dropdown from './components/dropdown';
 import { ProjectCard, type Project } from './components/project-card'
+
+const flagForLanguage = (lng: string) => {
+  switch (lng) {
+    case 'no':
+      return '🇳🇴'
+    case 'uk':
+      return '🇺🇦'
+    case 'ru':
+      return '🇷🇺'
+    case 'en':
+      return '🇺🇸'
+    default:
+      return ''
+  }
+}
 
 export default async function Page({ params: { lng } }: { params: { lng: string } }) {
   const { t } = await useTranslation(lng)
@@ -15,12 +32,31 @@ export default async function Page({ params: { lng } }: { params: { lng: string 
             Vi bor i Norge
           </h1>
         </div>
+        <nav className="header__nav">
+          <a className="header__nav-link" href="#projects">{t('projects')}</a>
+          <a className="header__nav-link" href="#about-us">{t('about-us')}</a>
+          <div>
+            <Dropdown
+              title={`🌐 ${t('lang')} ↓`}
+              titleClassName="header__nav-link"
+            >
+              {languages.filter((l) => lng !== l).map((l) => (
+                <div key={l} className="bg-white">
+                  <Link href={`/${l}`} className="header__nav-link">
+                    <span>{flagForLanguage(l)}&nbsp;</span>
+                    {t(l)}
+                  </Link>
+                </div>
+              ))}
+            </Dropdown>
+          </div>
+        </nav>
       </header>
       <main className="project">
         <h2 className="project__subtitle">{t('hello')}</h2>
         <p className="project__paragraph">{t('description-part-1')}</p>
         <p className="project__paragraph">{t('description-part-2')}</p>
-        <h2 className="project__subtitle">{t('projects')}</h2>
+        <h2 className="project__subtitle" id="projects">{t('projects')}</h2>
         <div className="projects__grid">
           {[
             {
@@ -59,7 +95,7 @@ export default async function Page({ params: { lng } }: { params: { lng: string 
             </Link>
           ))}
         </div>
-        <h2 className="project__subtitle">{t('about-us')}</h2>
+        <h2 className="project__subtitle" id="about-us">{t('about-us')}</h2>
         <p className="project__paragraph">{t('about-us-description-part-1')}</p>
         <p className="project__paragraph">{t('about-us-description-part-2')}</p>
         <div className="projects__grid">
