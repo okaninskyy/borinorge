@@ -43,7 +43,7 @@ export default async function Redaksjon({ params: { lng } }: { params: { lng: st
           </Link>
         </div>
       </main>
-      <Footer lng={lng} path={"/projects/redaksjon"}/>
+      <Footer />
     </>
   )
 }

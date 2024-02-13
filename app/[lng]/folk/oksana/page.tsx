@@ -36,7 +36,7 @@ export default async function Oksana({ params: { lng } }: { params: { lng: strin
           isHome
         />
       </main>
-      <Footer lng={lng} path={"/folk/oksana"}/>
+      <Footer />
     </>
   )
 }

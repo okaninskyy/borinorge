@@ -57,7 +57,7 @@ export default async function DirekteStotte({ params: { lng } }: { params: { lng
         <p className="project__paragraph">{t('volunteers-list')}</p>
         <p className="project__paragraph">{t('project-complete')}</p>
       </main>
-      <Footer lng={lng} path={"/projects/direkte-stotte"}/>
+      <Footer />
     </>
   )
 }

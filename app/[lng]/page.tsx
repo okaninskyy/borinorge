@@ -59,11 +59,11 @@ export default async function Page({ params: { lng } }: { params: { lng: string 
         <h2 className="project__subtitle" id="projects">{t('projects')}</h2>
         <div className="projects__grid">
           {[
-            {
-              id: 'troens-kraft',
-              title: t('project-troens-kraft'),
-              imageUrl: '/images/preview/troens_kraft_1200_630.jpeg',
-            },
+//            {
+//              id: 'troens-kraft',
+//              title: t('project-troens-kraft'),
+//              imageUrl: '/images/preview/troens_kraft_1200_630.jpeg',
+//            },
             {
               id: 'alias',
               title: t('project-alias'),
@@ -74,11 +74,11 @@ export default async function Page({ params: { lng } }: { params: { lng: string 
               title: t('project-ordbokene'),
               imageUrl: '/images/preview/ordbokene_1200_630.jpeg',
             },
-            {
-              id: 'it-kunnskap',
-              title: t('project-it-kunnskap'),
-              imageUrl: '/images/preview/it_kunnskap_1200_630.jpeg',
-            },
+//            {
+//              id: 'it-kunnskap',
+//              title: t('project-it-kunnskap'),
+//              imageUrl: '/images/preview/it_kunnskap_1200_630.jpeg',
+//            },
             {
               id: 'redaksjon',
               title: t('project-redaksjon'),
@@ -125,7 +125,7 @@ export default async function Page({ params: { lng } }: { params: { lng: string 
         <p className="project__paragraph">{t('privacy-policy')}</p>
       </main>
 
-      <Footer lng={lng} path={null}/>
+      <Footer />
     </>
   )
 }

@@ -54,7 +54,7 @@ export default async function Ordbokene({ params: { lng } }: { params: { lng: st
           </Link>
         </div>
       </main>
-      <Footer lng={lng} path={"/projects/ordbokene"}/>
+      <Footer />
     </>
   )
 }

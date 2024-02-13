@@ -103,7 +103,7 @@ export default async function ItKunnskap({ params: { lng } }: { params: { lng: s
           linkedin={"https://www.linkedin.com/in/oksana-donets/"}
         />
       </main>
-      <Footer lng={lng} path={"/projects/it-kunnskap"}/>
+      <Footer />
     </>
   )
 }

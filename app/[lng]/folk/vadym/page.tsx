@@ -36,7 +36,7 @@ export default async function Vadym({ params: { lng } }: { params: { lng: string
           isHome
         />
       </main>
-      <Footer lng={lng} path={"/folk/vadym"}/>
+      <Footer />
     </>
   )
 }

@@ -63,7 +63,7 @@ export default async function Alias({ params: { lng } }: { params: { lng: string
           linkedin={"https://www.linkedin.com/in/olena-varlamova-86a85724a/"}
         />
       </main>
-      <Footer lng={lng} path={"/projects/alias"}/>
+      <Footer />
     </>
   )
 }

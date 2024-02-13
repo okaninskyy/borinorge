@@ -98,7 +98,7 @@ export default async function TroensKraft({ params: { lng } }: { params: { lng: 
           </table>
         </div>
       </main>
-      <Footer lng={lng} path={"/projects/troens-kraft"}/>
+      <Footer />
     </>
   )
 }
