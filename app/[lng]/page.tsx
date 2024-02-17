@@ -6,21 +6,6 @@ import { Footer } from './components/footer'
 import Dropdown from './components/dropdown';
 import { ProjectCard, type Project } from './components/project-card'
 
-const flagForLanguage = (lng: string) => {
-  switch (lng) {
-    case 'no':
-      return '🇳🇴'
-    case 'uk':
-      return '🇺🇦'
-    case 'ru':
-      return '🇷🇺'
-    case 'en':
-      return '🇺🇸'
-    default:
-      return ''
-  }
-}
-
 export default async function Page({ params: { lng } }: { params: { lng: string } }) {
   const { t } = await useTranslation(lng)
 
@@ -37,13 +22,12 @@ export default async function Page({ params: { lng } }: { params: { lng: string 
           <a className="header__nav-link" href="#about-us">{t('about-us')}</a>
           <div>
             <Dropdown
-              title={`🌐 ${t('lang')} ↓`}
+              title={`${lng.toUpperCase()} ↓`}
               titleClassName="header__nav-link"
             >
               {languages.filter((l) => lng !== l).map((l) => (
-                <div key={l} className="bg-white">
+                <div key={l} className="p-2">
                   <Link href={`/${l}`} className="header__nav-link">
-                    <span>{flagForLanguage(l)}&nbsp;</span>
                     {t(l)}
                   </Link>
                 </div>

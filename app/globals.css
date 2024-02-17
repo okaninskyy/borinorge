@@ -44,7 +44,7 @@
   }
 
   .dropdown-content {
-    @apply absolute
+    @apply absolute py-2 text-left bg-white border-gray-200 border
   }
   
   /* Project */
