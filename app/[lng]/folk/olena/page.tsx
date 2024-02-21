@@ -32,7 +32,7 @@ export default async function Olena({ params: { lng } }: { params: { lng: string
           lng={lng}
           nameSlug={t('olena-varlamova')}
           instagram={"https://www.instagram.com/olena_varlamova/"} 
-          linkedin={"https://www.linkedin.com/in/olena-varlamova-86a85724a/"}
+          linkedin={"https://www.linkedin.com/in/olenavarlamova/"}
           isHome
         />
       </main>
