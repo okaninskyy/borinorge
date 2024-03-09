@@ -1,7 +1,9 @@
 import type { Metadata } from 'next'
+import { metadataTranslation } from '../../../i18n'
 
 // Dynamic metadata
-export function generateMetadata() {
+export async function generateMetadata({params: {lng}}:{params: {lng: string}}) {
+  const { t } = await metadataTranslation(lng, 'noun')  
   const title = "Norsklett — Существительные"
   const description = "Cуществительные в норвежском языке. Мужской род, женский род и средний род. Единственное число и множественное число. Определенная форма и неопределенная форма."
   const metadataBase = new URL('https://www.borinorge.no')

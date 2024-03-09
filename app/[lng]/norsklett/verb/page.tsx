@@ -1,13 +1,16 @@
 import Link from 'next/link'
 import { greatVibes } from '../../../fonts'
 import { Breadcrumbs } from '../../components/breadcrumbs'
+import { useTranslation } from '../../../i18n'
 
-export default function Noun({ params: { lng } }: { params: { lng: string } }) {
+export default async function Noun({ params: { lng } }: { params: { lng: string } }) {
+  const { t } = await useTranslation(lng, "verb")
+
   return (
     <>
       <header className="header">
         <div className="header__container">
-          <h1 className={`header__title header__title--home ${greatVibes.variable}`}>{"Verb"}</h1>
+          <h1 className={`header__title header__title--home ${greatVibes.variable}`}>{t("title")}</h1>
         </div>
       </header>
       <main className="project">
