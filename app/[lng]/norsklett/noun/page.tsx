@@ -16,64 +16,112 @@ export default async function Noun({ params: { lng } }: { params: { lng: string 
       <main className="project">
         <Breadcrumbs currentPage={"Существительные"} lng={lng} />
         <p className="project__paragraph">
-          Существительные в норвежском языке (Bokmål) имеют ряд характеристик,
-          включая род, число и определённость, которые могут изменять их форму. 
-          Вот основные аспекты существительных в норвежском языке.
+          Часть речи, обозначающая <b>предмет</b>, лицо или понятие,
+          отвечает на вопросы <b>«кто?»</b> или <b>«что?»</b>.
         </p>
-
-        {/* Род */}
-        <h2 className="project__subtitle">Род</h2>
-        <p className="project__paragraph">
-          <b>Мужской род</b>:
-          Используется артикль &quot;en&quot; для неопределённой формы и суффикс &quot;-en&quot; для определённой формы. 
-          Например, &quot;en bil&quot; (машина) становится &quot;bilen&quot; в определённой форме.
-        </p>
-        <p className="project__paragraph">
-          <b>Женский род</b>:
-          Используется артикль &quot;ei&quot; для неопределённой формы и суффикс &quot;-a&quot; для определённой формы.
-          Женские существительные также могут принимать мужской род, используя артикль &quot;en&quot; 
-          и суффикс &quot;-en&quot;. Например, &quot;ei bok&quot; (книга) 
-          становится &quot;boka&quot; или &quot;boken&quot; в определённой форме.
-        </p>
-        <p className="project__paragraph">
-          <b>Средний род</b>:
-          Используется артикль &quot;et&quot; для неопределённой формы и суффикс &quot;-et&quot; для определённой формы.
-          Например, &quot;et hus&quot; (дом) становится &quot;huset&quot; (дом) в определённой форме.
-        </p>
-
-        {/* Число */}
-        <h2 className="project__subtitle">Число</h2>
-        <p className="project__paragraph">
-          <b>Единственное число</b>:
-          Форма существительного, обозначающая один объект или понятие.
-        </p>
-        <p className="project__paragraph">
-          <b>Множественное число</b>:
-          Формируется разными способами в зависимости от рода и окончания существительного. 
-          Обычные суффиксы для множественного числа включают &quot;-er&quot;, &quot;-e&quot;, и &quot;-a&quot;. 
-          Например, &quot;biler&quot; (автомобили) от &quot;bil&quot;, &quot;bøker&quot; (книги) от &quot;bok&quot;.
-        </p>
-
-        {/* Определённость */}
-        <h2 className="project__subtitle">Определённость</h2>
-        <p className="project__paragraph">
-          <b>Неопределённая форма</b>:
-          Используется артикль (en, ei, et) перед существительным.
-        </p>
-        <p className="project__paragraph">
-          <b>Определённая форма</b>:
-          Формируется добавлением суффикса к слову (например, &quot;-en&quot;, &quot;-a&quot;, &quot;-et&quot;).
-        </p>
-        <p className="project__paragraph">
-          <b>Примеры</b>:
-          <ol>
-            <li>En gutt (мальчик) → Gutten (мальчик, определённая форма)</li>
-            <li>Ei jente (девочка) → Jenta (девочка, определённая форма)</li>
-            <li>Et eple (яблоко) → Eplet (яблоко, определённая форма)</li>
+        
+        <div className="project__paragraph">
+          <span>
+            В норвежском языке у существительного есть категории:
+          </span>
+          <ol className="list-decimal pl-4">
+            <li>
+              <b>Род</b>: мужской, женский и средний. Если на вашем языке
+              слово мужского рода, оно не обязательно будет такого же рода
+              на норвежском.
+            </li>
+            <li><b>Неопределенность</b> и <b>определенность</b></li>
+            <li><b>Число</b>: единственное и множественное.</li>
           </ol>
-        </p>
+        </div>
+
+        <div className="project__paragraph">
+          <span>
+            Какого рода существительное, нам показывают артикли:
+          </span>
+          <ul>
+            <li><b>en - мужской род</b></li>
+            <li><b>ei - женский род</b></li>
+            <li><b>et - средний род</b></li>
+          </ul>
+          <span>
+            Хорошая новость! Все слова женского рода можно использовать так, как будто они мужского рода. 
+            И это не будет ошибкой. Поэтому запомнить надо только слова среднего рода (их около 25%)
+          </span>
+        </div>
+
+        <div className="project__paragraph">
+          <span>У каждого существительного есть 4 формы:</span>
+          <ol className="list-decimal list-inside pl-0">
+            <li>
+              неопределенная форма, единственное число
+              en gutt, ei jente, et eple, et hus - мальчик, девочка, яблоко, дом
+            </li>
+            <li>
+              определенная форма, единственное число (артикль уходит в конец слова)
+              gutten, jenta (ei превращается в a), eplet, huset (t в конце не читается)
+            </li>
+            <li>
+              неопределенная форма, множественное число (окончание -er)
+              gutter, jenter, epler, hus (односложное слово среднего рода так и остается)
+              мальчики, девочки, яблоки, дома
+            </li>
+            <li>
+              определенная форма, множественное число (окончание -ene)
+              guttene, jentene, eplene, husene
+            </li>
+          </ol>
+        </div>
+
+        <div className="project__paragraph">
+          <span>Где смотреть формы существительного? В <b>словарях</b>:</span>
+          <ul>
+            <li>
+              *Словарь русско-норвежский Lexin, с озвучкой<br />
+              <a href="https://lexin.oslomet.no/#/findwords/message.bokmal-russian" className='project__link'>
+                https://lexin.oslomet.no/#/findwords/message.bokmal-russian
+              </a><br />
+              (чтобы посмотреть формы слова, ищите строчку bøyning)
+            </li>
+            <li>
+              *Словарь норвежско-норвежский Ordbøkene <br />
+              <a href="https://ordbokene.no/" className='project__link'>
+                https://ordbokene.no/
+              </a><br />
+              (чтобы посмотреть формы слова, нажмите на vis bøyning)
+            </li>
+          </ul>
+        </div>
+
+        <div className='project__paragraph'>
+          En/ei/et по сути означает ОДИН. Поэтому мы можем использовать неопределенный артикль только перед тем, что можем подсчитать.
+          <div className="grid grid-cols-2">
+            <div>Можно мне чашку чая?</div>
+            <div>Kan jeg få en kopp te?</div>
+            <div>Можно мне чай?</div>
+            <div>Kan jeg få te?</div>
+          </div>
+        </div>
+
+        <div className='project__paragraph'>
+          Неопределенная или определенная форма? Основное правило: если
+          информация для вашего собеседника новая - неопределенная форма.
+        </div>
+
+        <div className='project__paragraph'>
+          Хотите узнать больше о том, когда именно использовать неопределенную
+          или определенную форму, ставить ли артикль, какие есть исключения из
+          правил, а также найти список слов среднего рода с переводом и озвучкой? 
+        </div>
+
+        <div className='project__paragraph'>
+          <b>Добро пожаловать в Телеграм “Норвежский? Легко!” &nbsp;
+          <a href="https://ordbokene.no/" className='project__link'>https://t.me/NorskLett</a>
+          </b>
+        </div>
 
         {/* Реклама чата */}
+        {/* 
         <h2 className="project__subtitle">Больше информации</h2>
         <p className="project__paragraph">
           Вступайте в наш телеграм чат, общайтесь с участниками, играйте в обучающие игры,
@@ -84,6 +132,7 @@ export default async function Noun({ params: { lng } }: { params: { lng: string 
             @NorskLett
           </Link>
         </div>
+        */}
       </main>
     </>
   )
