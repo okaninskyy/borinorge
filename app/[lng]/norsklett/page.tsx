@@ -34,7 +34,7 @@ export default async function ChatNorsklett({ params: { lng } }: { params: { lng
           />
         </div>
 
-        <h2 className="project__subtitle text-center py-4">Телеграм чат</h2>
+        <h2 className="project__subtitle text-center pt-12">Телеграм чат</h2>
 
         <div className="md:grid md:grid-cols-2">
           <div className='md:hover:bg-gray-100 md:px-4 md:rounded-xl'>
