@@ -43,11 +43,6 @@ export default async function Page({ params: { lng } }: { params: { lng: string 
         <h2 className="project__subtitle" id="projects">{t('projects')}</h2>
         <div className="projects__grid">
           {[
-//            {
-//              id: 'troens-kraft',
-//              title: t('project-troens-kraft'),
-//              imageUrl: '/images/preview/troens_kraft_1200_630.jpeg',
-//            },
             {
               id: 'alias',
               title: t('project-alias'),

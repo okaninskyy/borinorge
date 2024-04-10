@@ -102,31 +102,6 @@
     @apply h-36 md:h-64 object-cover
   }
 
-  /* Troens Kraft events table */
-  .events {
-    @apply overflow-x-auto pt-2 pb-4
-  }
-
-  .events__table {
-    @apply min-w-full border-collapse border border-gray-300
-  } 
-
-  .events__thead {
-    @apply bg-gray-100
-  }
-
-  .events__th {
-    @apply px-6 py-3 border-b border-gray-300
-  }
-
-  .events__tr {
-    @apply hover:bg-gray-50
-  }
-
-  .events__td {
-    @apply px-6 py-4 border-b border-gray-300
-  }
-
   /* Projects__grid */
   .projects__grid {
     @apply grid grid-cols-1 md:grid-cols-2 
