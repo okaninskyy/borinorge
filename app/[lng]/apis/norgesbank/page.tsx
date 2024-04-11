@@ -11,7 +11,7 @@ export default async function Apis({ params: { lng } }: { params: { lng: string 
     <>
       <header className="header">
         <div className="header__container">
-          <h1 className={`header__title header__title--home`}>{t("title")}</h1>
+          <h1 className={`header__title header__title--home text-4xl`}>{t("title")}</h1>
         </div>
       </header>
       <main className="project">

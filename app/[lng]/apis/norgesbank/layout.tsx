@@ -18,15 +18,11 @@ export async function generateMetadata({params: {lng}}:{params: {lng: string}}) 
       title: title,
       description: description,
       siteName: title,
-      images: [{
-        url: "/images/preview/troens_kraft_1200_630.jpeg",
-      }],
     },
     twitter: {
-      card: "summary_large_image",
+      card: "summary",
       site: "@site",
       creator: "@creator", 
-      images: "/images/preview/troens_kraft_1200_630.jpeg" 
     },
   }
 

@@ -9,11 +9,11 @@
   "table-explanation": "Done! The RATE value in the table indicates the spot exchange rate in Norwegian kroner, rounded to 5 decimal places.",
   "exchange-description": "We invite you to test currency exchange using our new algorithm. Enter your request in the text field. For example:",
   "example-link-1": "Convert 15 euros to kroner and dollars",
-  "example-link-2": "45 usd в nok sek dkk",
+  "example-link-2": "45 usd til nok, sek og dkk",
   "exchange-label": "Exchange",
   "unexpected-error": "Something went wrong, we are sorry. Please try refreshing the website page and repeat the operation.",
   "placeholder1": "Enter the prompt",
   "placeholder2": "The result will be displayed here",
-  "author-info": "Denne siden er opprettet som en del av utforskingen av digitale tjenester i Norge. Vi hører gjerne fra deg dersom du har forslag til forbedringer eller har spørsmål.",
+  "author-info": "This page is created as part of exploring digital services in Norway. We would be happy to hear your opinion if you have any suggestions for improvement or questions.",
   "contact-us": "Contact us"
 }
