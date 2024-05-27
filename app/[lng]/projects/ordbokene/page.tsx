@@ -17,8 +17,25 @@ export default async function Ordbokene({ params: { lng } }: { params: { lng: st
       </header>
       <main className="project">
         <Breadcrumbs currentPage={t('title')} lng={lng} />
-        <p className="project__paragraph">{t('description')}</p>
-        <p className="project__paragraph p-0">{t('fra-olena')}</p>
+        <p className="project__paragraph pb-0">
+          <span>{t('description')}</span>&nbsp;
+          <span>{t('description-2024')}</span>
+        </p>
+        
+        <p className="project__paragraph pb-0">{t('team')}</p>
+        <Image
+          className="project__image pb-4"
+          src="/images/ordbokene/team.jpeg"
+          alt="Vadym Kaninskyi, Olena Varlamova, Margunn Rauset, Oksana Donets"
+          width={2870}
+          height={1713}
+          priority
+        />
+
+        <p className="project__paragraph p-0 pt-0">{t('fra-margunn')}</p>
+        <p className="project__quote">{t('quote-margunn')}</p>
+
+        <p className="project__paragraph p-0 pt-4">{t('fra-olena')}</p>
         <Image
           className="project__image p-0 pt-4"
           src="/images/ordbokene/olena-varlamova.jpeg"

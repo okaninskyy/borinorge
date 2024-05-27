@@ -277,6 +277,42 @@ export async function getExchangeRate(currencyCode: string): Promise<CurrencyRat
   return currencyRate
 }
 
+// Rounds currency
+export function roundCurrency(amount: number): number {
+  if (amount < 1) {
+    const strAmount = amount.toString().split('')
+    let newAmount = ''
+    let firstNonZero: boolean = false
+    let totalNonZero: number = 0
+    for (let i = 0; i < strAmount.length; i++) {
+      const ch = strAmount[i]
+      if (firstNonZero) {
+        if (totalNonZero < 3) {
+          newAmount = `${newAmount}${ch}`
+          totalNonZero++
+        } else {
+          break
+        }
+      } else {
+        if (['0', '.'].includes(ch)) {
+          newAmount = `${newAmount}${ch}`
+        } else {
+          firstNonZero = true
+          totalNonZero++
+          newAmount = `${newAmount}${ch}`
+        }
+      }
+    }
+    return parseFloat(newAmount);
+  } else if (amount >= 0 && amount <= 10) {
+    return parseFloat(amount.toFixed(3));
+  } else if (amount > 10 && amount <= 10000) {
+    return parseFloat(amount.toFixed(2));
+  } else {
+    return Math.round(amount);
+  }
+}
+
 // Is used in UI, not covered by unit tests
 export function convert(input: string, exchangeRates: Array<CurrencyRateTowardsNok>): string {
   let result: string = ""
@@ -311,7 +347,7 @@ export function convert(input: string, exchangeRates: Array<CurrencyRateTowardsN
           exchangedRate = (er && ber) ? data.amount * ber / er : 0
         }
 
-        result += `${data.amount} ${baseCode} = ${exchangedRate.toFixed(5)} ${code}\n`
+        result += `${data.amount} ${baseCode} = ${roundCurrency(exchangedRate)} ${code}\n`
       }
     } else {
       result = "Not enough data for currency exchange."

@@ -4,7 +4,8 @@ import {
   getCurrencyCodes,
   getServiceName,
   getCurrencyList,
-  getExchangeRate
+  getExchangeRate,
+  roundCurrency
 } from './converter'
 import mockApiResponseAll from './json-data/mock-api-response-all.json'
 import mockApiResponseDkk from './json-data/mock-api-response-dkk.json'
@@ -260,5 +261,38 @@ describe('getExchangeRate', () => {
       expect(rate.exponent).toEqual(0)
       expect(typeof rate.actualRate).toEqual("number")
     })
+  })
+})
+
+
+describe('roundCurrency',() => {
+  it('should round correct if less than 1', () => {
+    expect(roundCurrency(0.00000124234)).toEqual(0.00000124)
+    expect(roundCurrency(0.00099849223)).toEqual(0.000998)
+    expect(roundCurrency(0.02355767967)).toEqual(0.0235)
+  })
+
+  it('should round correct if between 1 and 10', () => {
+    expect(roundCurrency(9.1234567)).toEqual(9.123)
+    expect(roundCurrency(7.7777777)).toEqual(7.778)
+    expect(roundCurrency(5.5555555)).toEqual(5.556)
+    expect(roundCurrency(3.3333333)).toEqual(3.333)
+  })
+
+  it('should round correct if between 10 and 10000', () => {
+    expect(roundCurrency(10.857465)).toEqual(10.86)
+    expect(roundCurrency(84.26580974472402)).toEqual(84.27)
+    expect(roundCurrency(995.7431614295479)).toEqual(995.74)
+    expect(roundCurrency(3513.03505088031)).toEqual(3513.04)
+    expect(roundCurrency(5884.074717074991)).toEqual(5884.07)
+  })
+
+  it('should round correct if more than 10000', () => {
+    expect(roundCurrency(19714.102)).toEqual(19714)
+    expect(roundCurrency(46257.4975)).toEqual(46257)
+    expect(roundCurrency(58228.276538948616)).toEqual(58228)
+    expect(roundCurrency(681859.9214455937)).toEqual(681860)
+    expect(roundCurrency(2472229.974636386 )).toEqual(2472230)
+    expect(roundCurrency(5800881.616173422)).toEqual(5800882)
   })
 })

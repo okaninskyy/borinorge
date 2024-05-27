@@ -3,7 +3,7 @@ import { metadataTranslation } from '../../../i18n'
 
 // Dynamic metadata
 export async function generateMetadata({params: {lng}}:{params: {lng: string}}) {
-  const { t } = await metadataTranslation(lng, 'ordbokene')
+  const { t } = await metadataTranslation(lng, 'ordbokene-api')
   const title = t('meta-title')
   const description = t('meta-description')
   const metadataBase = new URL('https://www.borinorge.no')
@@ -18,15 +18,11 @@ export async function generateMetadata({params: {lng}}:{params: {lng: string}}) 
       title: title,
       description: description,
       siteName: title,
-      images: [{
-        url: "/images/preview/ordbokene_1200_630_v3.jpeg",
-      }],
     },
     twitter: {
-      card: "summary_large_image",
+      card: "summary",
       site: "@site",
       creator: "@creator", 
-      images: "/images/preview/ordbokene_1200_630.jpeg" 
     },
   }
 
