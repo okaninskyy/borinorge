@@ -1,0 +1,19 @@
+{
+  "meta-title": "Borinorge — Norges Bank API",
+  "meta-description": "Norges Bank's API for open data offers programmatic access to selected datasets published by the bank. The service is free to use and requires no authentication.",
+  "title": "Norges Bank API",
+  "about-api": "Noregs Banks API for opne data gjev maskinell tilgang til utvald statistikk publisert av banken. Tenesta er implementert som eit REST programmeringsgrensesnitt kvar ein kan formulera spørringar mot våre datasett og henta ut data i ei rekkje format. Tenesta kan fritt nyttes og krev ingen autentifisering.",
+  "exchange-rates": "Noregs Bank publiserer valutakursar for omtrent 40 valutaar dagleg, og publiseringstida for desse kursane er vanlegvis kl. 16:00 Sentraleuropeisk tid (CET). Lat oss prøva å henta desse dataane saman ved hjelp av Noregs Banks API.",
+  "get-exchange-rates": "Få valutakursar",
+  "getting-exchange-rate": "Get exchange rate for",
+  "table-explanation": "Ferdig! RATE-verdien i tabellen indikerer spottvekselkursen i norske kroner, avrunda til 5 desimalar.",
+  "exchange-description": "Me inviterer deg til å testa valutaveksling med vår nye algoritme. Skriv inn førespurnaden din i tekstfeltet. Til dømes:",
+  "example-link-1": "Konvert 15 euro til kroner og dollar",
+  "example-link-2": "45 usd til nok, sek og dkk",
+  "exchange-label": "Konvert",
+  "unexpected-error": "Something went wrong, we are sorry. Please try refreshing the website page and repeat the operation.",
+  "placeholder1": "Skriv inn prompten",
+  "placeholder2": "The result will be displayed here",
+  "author-info": "Denne sida er oppretta som ein del av utforskinga av digitale tenester i Noreg. Me høyrer gjerne frå deg dersom du har forslag til forbetringar eller har spørsmål.",
+  "contact-us": "Kontakt oss"
+}
